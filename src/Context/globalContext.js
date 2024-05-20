@@ -1,8 +1,9 @@
 import React,{useContext,useState} from "react";
 import axios from 'axios'
 import Cookies from 'js-cookie';
+// require('dotenv').config()
 
-const BASE_URL="https://expense-tracker-backend-eedq.onrender.com/auth"
+const BASE_URL=process.env.REACT_APP_BASE_URL
 const GlobalContext = React.createContext()
 
 export const GlobalProvider =({children})=>{

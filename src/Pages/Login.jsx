@@ -12,6 +12,7 @@ const Login = () => {
   const [error, setError] = useState(null);
   const navigate = useNavigate();
   axios.defaults.withCredentials = true;
+  const BASE_URL=process.env.REACT_APP_BASE_URL
   
   // useEffect(() => {
   //   axios
@@ -31,7 +32,7 @@ const Login = () => {
       alert("Fill the neccessary details")
     }
     try {
-      const result = await axios.post('https://expense-tracker-backend-eedq.onrender.com/auth/login', values);
+      const result = await axios.post(`${BASE_URL}/login`, values);
       console.log(result);
       if (result.data.LoginStatus) {
         Cookies.set("token", result.data.token, { expires: 7 });

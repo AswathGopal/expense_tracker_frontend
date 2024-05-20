@@ -15,13 +15,14 @@ const SignIn = () => {
   const [error, setError] = useState(null);
   const navigate = useNavigate();
   axios.defaults.withCredentials = true;
-
+ 
+  const BASE_URL=process.env.REACT_APP_BASE_URL
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
       const result = await axios.post(
-        "https://expense-tracker-backend-eedq.onrender.com/auth/signup",
+        `${BASE_URL}/signup`,
         values
       );
       console.log(result.data.signupStatus);

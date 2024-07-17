@@ -14,16 +14,16 @@ const Login = () => {
   axios.defaults.withCredentials = true;
   const BASE_URL=process.env.REACT_APP_BASE_URL
   
-  // useEffect(() => {
-  //   axios
-  //     .post("http://localhost:8000/verify", { token: Cookies.get("token") })
-  //     .then((result) => {
-  //       console.log(result.data.Status)
-  //       if (result.data.Status = "ok") navigate("/dashboard");
-  //       if (result.data.Status = "not ok") navigate("/");
-  //     })
-  //     .then((err) => console.log(err));
-  // }, []);
+  useEffect(() => {
+    axios
+      .post("http://localhost:8000/verify", { token: Cookies.get("token") })
+      .then((result) => {
+        console.log(result.data.Status)
+        if (result.data.Status === "ok") navigate("/dashboard");
+        if (result.data.Status === "not ok") navigate("/");
+      })
+      .then((err) => console.log(err));
+  }, []);
 
   const handleSubmit = async(e) => {
     e.preventDefault();

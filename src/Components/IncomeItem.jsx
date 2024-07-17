@@ -94,7 +94,7 @@ function IncomeItem({
                             bPad={'py-2 px-6'}
                             bRad={'rounded-full'}
                             bg={'bg-primary-color'}
-                            color={'text-white'}
+                            color={'text-black'}
                             iColor={'text-white'}
                             hColor={'hover:bg-color-green'}
                             onClick={() => deleteItem(id)}

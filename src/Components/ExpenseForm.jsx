@@ -106,10 +106,10 @@ function ExpenseForm() {
                 <Button 
                     name="Add Expense"
                     icon={plus}
-                    bPad=".8rem 1.6rem"
-                    bRad="30px"
-                    bg="var(--color-accent)"
-                    color="#fff"
+                    bPad={'py-2 px-6'}
+                    bRad={'rounded-full'}
+                    bg={'bg-blue-500'}
+                    color={'text-white'}
                 />
             </div>
         </form>

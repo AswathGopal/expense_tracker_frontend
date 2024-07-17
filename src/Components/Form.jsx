@@ -45,7 +45,7 @@ function Form() {
                     name={'title'}
                     placeholder="Salary Title"
                     onChange={handleInput('title')}
-                    className="font-inherit text-inherit outline-none border-none px-4 py-2 rounded border bg-transparent placeholder-gray-400 focus:border-blue-500 focus:ring focus:ring-blue-200"
+                    className="w-full p-2.5 rounded-md border-2 border-white bg-transparent shadow-md text-gray-900 placeholder-gray-400 focus:placeholder-gray-900"
                 />
             </div>
             <div className="input-control">
@@ -55,7 +55,7 @@ function Form() {
                     name={'amount'}
                     placeholder={'Salary Amount'}
                     onChange={handleInput('amount')}
-                    className="font-inherit text-inherit outline-none border-none px-4 py-2 rounded border bg-transparent placeholder-gray-400 focus:border-blue-500 focus:ring focus:ring-blue-200"
+                    className="w-full p-2.5 rounded-md border-2 border-white bg-transparent shadow-md text-gray-900 placeholder-gray-400 focus:placeholder-gray-900"
                 />
             </div>
             <div className="input-control">
@@ -67,7 +67,7 @@ function Form() {
                     onChange={(date) => {
                         setInputState({ ...inputState, date: date });
                     }}
-                    className="font-inherit text-inherit outline-none border-none px-4 py-2 rounded border bg-transparent placeholder-gray-400 focus:border-blue-500 focus:ring focus:ring-blue-200"
+                    className="w-full p-2.5 rounded-md border-2 border-white bg-transparent shadow-md text-gray-900 placeholder-gray-400 focus:placeholder-gray-900"
                 />
             </div>
             <div className="selects input-control flex justify-end">
@@ -77,7 +77,7 @@ function Form() {
                     name="category"
                     id="category"
                     onChange={handleInput('category')}
-                    className="font-inherit text-inherit outline-none border-none px-4 py-2 rounded border bg-transparent placeholder-gray-400 focus:border-blue-500 focus:ring focus:ring-blue-200"
+                    className="w-full p-2.5 rounded-md border-2 border-white bg-transparent shadow-md text-gray-900 placeholder-gray-400 focus:placeholder-gray-900"
                 >
                     <option value="" disabled>Select Option</option>
                     <option value="salary">Salary</option>
@@ -99,7 +99,7 @@ function Form() {
                     cols="30"
                     rows="4"
                     onChange={handleInput('description')}
-                    className="font-inherit text-inherit outline-none border-none px-4 py-2 rounded border bg-transparent placeholder-gray-400 focus:border-blue-500 focus:ring focus:ring-blue-200"
+                    className="w-full p-2.5 rounded-md border-2 border-white bg-transparent shadow-md text-gray-900 placeholder-gray-400 focus:placeholder-gray-900"
                 ></textarea>
             </div>
             <div className="submit-btn">
